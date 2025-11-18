@@ -35,9 +35,9 @@ Doing first name and last initial is also fine (`walter-g`).
 
 ### Guidelines
 
-- Use all *lowercase*
-- use *hyphens* instead of spaces (`walter-goodzey`)
-- Do *not* delete and recreate the directory, use `git mv` to have a clean
+- Use all **lowercase**
+- use **hyphens** instead of spaces (`walter-goodzey`)
+- Do **not** delete and recreate the directory, use `git mv` to have a clean
 version history
 
 ## Commit your change
