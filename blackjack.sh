@@ -10,7 +10,6 @@ BUILD_DIR="build"
 
 RUNNER_EXE="bin/blackjack_runner.out"
 DEALER_SO="bin/libblack_jack_solver_dealer.so"
-PLAYER_SO=$(find ./build/players -type f -name "*.so")
 DUMP_JSON="out.json"
 NDECKS="2"
 RESHUFFLE_PCTG="0.5"
@@ -47,6 +46,7 @@ case "$cmd" in
       echo "Error: cmake not found. Please install CMake."
       exit 1
     fi
+    PLAYER_SO=$(find ./build/players -type f -name "*.so")
     "$RUNNER_EXE" \
     --dealer "$DEALER_SO" \
     --player "$PLAYER_SO" \
